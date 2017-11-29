@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_04.Tekenen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="500" Width="700">
+    <Grid Name="tekenen">
+        <Button Name="btnLine" Content="Draw the line" HorizontalAlignment="Left" Margin="589,29,0,0" VerticalAlignment="Top" Width="75" Click="btnLine_Click"/>
+        <TextBox Name="txtX1" HorizontalAlignment="Left" Height="23" Margin="589,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="txtX2" HorizontalAlignment="Left" Height="23" Margin="589,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="txtY1" HorizontalAlignment="Left" Height="23" Margin="589,168,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="txtY2" HorizontalAlignment="Left" Height="23" Margin="589,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <Label Name="lblX1" Content="X1" HorizontalAlignment="Left" Margin="474,76,0,0" VerticalAlignment="Top" Height="26" Width="98"/>
+        <Label Name="lblX2" Content="X2" HorizontalAlignment="Left" Margin="474,124,0,0" VerticalAlignment="Top" Height="23" Width="98"/>
+        <Label Name="lblY1" Content="Y1" HorizontalAlignment="Left" Margin="474,168,0,0" VerticalAlignment="Top" Height="23" Width="98"/>
+        <Label Name="lblY2" Content="Y2" HorizontalAlignment="Left" Margin="474,205,0,0" VerticalAlignment="Top" Height="23" Width="98"/>
+        <TextBox Name="txtColour" HorizontalAlignment="Left" Height="23" Margin="589,246,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <Label HorizontalAlignment="Left" Margin="549,258,0,0" VerticalAlignment="Top"/>
+        <Label Name="lblColour" Content="Colour" HorizontalAlignment="Left" Margin="474,245,0,0" VerticalAlignment="Top" Height="23" Width="98"/>
+        <TextBox Name="txtThickness" HorizontalAlignment="Left" Height="23" Margin="589,283,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <Label Name="lblThick" Content="Thickness" HorizontalAlignment="Left" Margin="474,280,0,0" VerticalAlignment="Top" Width="98"/>
+        <Button Name="btnRec" Content="Draw the rec" HorizontalAlignment="Left" Margin="589,29,0,0" VerticalAlignment="Top" Width="75" Click="btnRec_Click" Visibility="Hidden"/>
+        <Button Name="btnChange" Content="Rec/Line" HorizontalAlignment="Left" Margin="474,29,0,0" VerticalAlignment="Top" Width="75" Click="btnChange_Click"/>
+
     </Grid>
 </Window>
